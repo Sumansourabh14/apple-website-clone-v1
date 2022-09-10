@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
       <Navbar />
-      <Offer classes="pt-12 px-16" />
+      <Offer classes="pt-14 px-16" />
       <BlackBg 
         mainLink="https://www.apple.com/in/iphone-14-pro/"
         title="iPhone 14 Pro"

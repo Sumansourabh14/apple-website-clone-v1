@@ -39,8 +39,8 @@ function Navbar() {
     }
 
     return (
-        <header className="fixed left-0 right-0 bg-stone-700 backdrop-blur-xl bg-opacity-70">
-            <nav className="container px-4 py-2 text-white mx-auto flex justify-between items-center">
+        <header className="fixed left-0 right-0 bg-stone-800 backdrop-blur-xl bg-opacity-70">
+            <nav className="container px-4 py-3 text-white mx-auto flex justify-between items-center">
                 {!navUl ? (
                     <button onClick={handleClick} className="md:hidden text-xl">
                         <FontAwesomeIcon icon={faBars} />
