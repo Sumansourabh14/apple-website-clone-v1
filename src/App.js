@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Offer from "./components/Offer";
 import HomepageGrid from "./components/HomepageGrid";
 import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       />
       <HomepageGrid />
       <Carousel />
+      <Footer />
     </main>
   );
 }

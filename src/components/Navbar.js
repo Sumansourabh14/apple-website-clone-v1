@@ -30,6 +30,31 @@ function Navbar() {
             name: "Watch",
             link: ""
         },
+        // {
+        //     id: 6,
+        //     name: "Air Pods",
+        //     link: ""
+        // },
+        // {
+        //     id: 7,
+        //     name: "TV & Home",
+        //     link: ""
+        // },
+        // {
+        //     id: 8,
+        //     name: "Only on Apple",
+        //     link: ""
+        // },
+        {
+            id: 9,
+            name: "Accessories",
+            link: ""
+        },
+        {
+            id: 10,
+            name: "Support",
+            link: ""
+        },
     ];
 
     const [navUl, setNavUl] = useState(false);
