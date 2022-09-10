@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar";
+import Offer from "./components/Offer";
 
 function App() {
   return (
     <main>
       <Navbar />
-      <h1>Apple</h1>
+      <Offer classes="pt-12 px-16" />
     </main>
   );
 }
