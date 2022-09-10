@@ -39,7 +39,7 @@ function Navbar() {
     }
 
     return (
-        <header className="fixed left-0 right-0 bg-stone-700">
+        <header className="fixed left-0 right-0 bg-stone-700 backdrop-blur-xl bg-opacity-70">
             <nav className="container px-4 py-2 text-white mx-auto flex justify-between items-center">
                 {!navUl ? (
                     <button onClick={handleClick} className="md:hidden text-xl">
@@ -51,17 +51,10 @@ function Navbar() {
                     </button>
                     )
                 }
-                
-                {/* <a onClick={handleClick} className="md:hidden">
-                    <FontAwesomeIcon icon={faBars} />
-                </a>
-                <a className="md:hidden">
-                    <FontAwesomeIcon icon={faXmark} />
-                </a> */}
                 <a href="https://www.apple.com/in/">
                     <FontAwesomeIcon icon={faApple} className="text-xl" />
                 </a>
-                <ul className={(navUl ? "flex" : "hidden") + " flex-col md:flex md:flex-row md:gap-4 md:text-sm absolute top-10 left-0 px-10 right-0 md:static bg-stone-700"}>
+                <ul className={(navUl ? "flex" : "hidden") + " flex-col md:flex md:flex-row md:gap-4 md:text-sm absolute top-10 left-0 px-10 right-0 md:static bg-black md:bg-transparent"}>
                     {navElements.map(navEl => {
                         return (
                             <li key={navEl.id} className="py-3 border-b md:px-0 md:py-0 md:border-none">

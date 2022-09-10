@@ -1,11 +1,11 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function WhiteBg(props) {
+function GridWhiteBg(props) {
     return (
-        <section className="bg-white text-black py-3">
-            <a href={props.mainLink} className="text-center pt-12 flex flex-col gap-2 bg-stone-100">
-                <h2 className="text-4xl lg:text-6xl font-bold">{props.title}</h2>
+        <section className="p-2 text-black">
+            <a href={props.mainLink} className="text-center pt-12 flex flex-col gap-2 bg-white">
+                <h2 className="text-2xl lg:text-4xl font-bold">{props.icon}{props.title}</h2>
                 <h3 className="text-xl lg:text-3xl">{props.subtitle}</h3>
                 <p className="text-stone-600 text-lg lg:text-xl">{props.description}</p>
                 <div className="text-sky-600 flex justify-center gap-8">
@@ -28,4 +28,4 @@ function WhiteBg(props) {
     )
 }
 
-export default WhiteBg;
+export default GridWhiteBg;
