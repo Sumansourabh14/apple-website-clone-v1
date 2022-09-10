@@ -55,11 +55,11 @@ function HomepageGrid() {
             <GridWhiteBg  
                 mainLink="https://www.apple.com/in/macbook-air-m2/"
                 title="MacBook Air"
-                subtitle="Supercharged by"
+                subtitle="Supercharged by M2"
                 learnMoreLink="https://www.apple.com/in/macbook-air-m2/"
                 orderLinkText="Buy"
                 orderLink="https://www.apple.com/in/shop/goto/buy_mac/macbook_air_m2"
-                classes="rotate-12 max-w-sm"
+                classesImg="-rotate-45 w-44 py-12 "
                 imageSrc="https://www.apple.com/v/macbook-air-m2/b/images/overview/hero/hero_chevron_spacegray__de41jkv6pryq_large.jpg"
                 imageAlt="MacBook Air"
             />

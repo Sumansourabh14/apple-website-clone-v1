@@ -20,7 +20,7 @@ function GridWhiteBg(props) {
                     <img 
                         src={props.imageSrc}
                         alt={props.imageAlt}
-                        className={props.classes + " max-w-xs lg:max-w-md mx-auto"} 
+                        className={"max-w-xs lg:max-w-md mx-auto " + props.classesImg + props.classes1} 
                     />
                 </div>
             </a>

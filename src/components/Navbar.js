@@ -39,7 +39,7 @@ function Navbar() {
     }
 
     return (
-        <header className="fixed left-0 right-0 bg-stone-800 backdrop-blur-xl bg-opacity-70">
+        <header className="fixed left-0 right-0 bg-stone-800 backdrop-blur-xl bg-opacity-70 z-50">
             <nav className="container px-4 py-3 text-white mx-auto flex justify-between items-center">
                 {!navUl ? (
                     <button onClick={handleClick} className="md:hidden text-xl">
