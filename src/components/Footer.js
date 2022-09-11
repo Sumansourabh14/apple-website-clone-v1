@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
 import FooterAccordion from "./FooterAccordion";
 import { FooterLinks } from "./FooterData";
 import FooterMdScreen from "./FooterMdScreen";
 
 function Footer() {
+
+    // let mql = window.matchMedia(`(min-width: 768px)`);
+    // let mobileView = mql.matches;   // true or false
+
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 768;
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth)
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <footer id="footer" className="bg-stone-50 mt-4">
             <div className="container mx-auto px-8 text-stone-600">
@@ -13,10 +28,7 @@ function Footer() {
                     </ol>
                 </div>
 
-                <div className={("md:" ? <FooterMdScreen /> : <FooterAccordion />) }></div>
-
-                {/* <FooterAccordion />
-                <FooterMdScreen /> */}
+                {width > breakpoint ? <FooterMdScreen /> : <FooterAccordion />}
 
                 <div className="text-sm py-2">
                     <p>More ways to shop: <a className="text-blue-500 hover:underline" href="https://locate.apple.com/in/en/">Find a retailer</a> near you. Or call 000800 040 1966.</p>
