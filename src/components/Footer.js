@@ -1,5 +1,6 @@
 import FooterAccordion from "./FooterAccordion";
 import { FooterLinks } from "./FooterData";
+import FooterMdScreen from "./FooterMdScreen";
 
 function Footer() {
     return (
@@ -12,13 +13,16 @@ function Footer() {
                     </ol>
                 </div>
 
-                <FooterAccordion />
+                <div className={("md:" ? <FooterMdScreen /> : <FooterAccordion />) }></div>
+
+                {/* <FooterAccordion />
+                <FooterMdScreen /> */}
 
                 <div className="text-sm py-2">
-                    <p>More ways to shop: Find a retailer near you. Or call 000800 040 1966.</p>
+                    <p>More ways to shop: <a className="text-blue-500 hover:underline" href="https://locate.apple.com/in/en/">Find a retailer</a> near you. Or call 000800 040 1966.</p>
                 </div>
 
-                <div className="text-sm py-2 flex flex-col md:flex-row-reverse md:justify-between md:items-center border-t border-stone-300">
+                <div className="text-sm py-2 flex flex-col md:flex-row-reverse md:justify-between md:items-center md:border-t border-stone-300">
                     <a href="https://www.apple.com/choose-country-region/" className="hover:underline">India</a>
                     <div className="text-sm py-2 flex flex-col md:flex-row lg:gap-10">
                         <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
