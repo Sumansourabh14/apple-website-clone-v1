@@ -114,27 +114,37 @@ const AboutApple = [
     {
         id: 1,
         name: "Newsroom",
-        link: "https://www.apple.com/in/legal/privacy/",
+        link: "https://www.apple.com/in/newsroom/",
     },
     {
         id: 2,
         name: "Apple Leadership",
-        link: "https://www.apple.com/in/apple-tv-plus/",
+        link: "https://www.apple.com/in/leadership/",
     },
     {
         id: 3,
         name: "Career Oppurtunities",
-        link: "https://www.apple.com/in/apple-arcade/",
+        link: "https://www.apple.com/careers/in/",
     },
     {
         id: 4,
         name: "Investors",
-        link: "https://www.apple.com/in/watch/",
+        link: "https://investor.apple.com/",
     },
     {
         id: 5,
         name: "Ethics & Compliance",
-        link: "https://www.apple.com/in/watch/",
+        link: "https://www.apple.com/compliance/",
+    },
+    {
+        id: 6,
+        name: "Events",
+        link: "https://www.apple.com/in/apple-events/",
+    },
+    {
+        id: 7,
+        name: "Contact Apple",
+        link: "https://www.apple.com/in/contact/",
     },
 ]
 

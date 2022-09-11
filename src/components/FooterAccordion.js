@@ -38,7 +38,7 @@ function FooterAccordion() {
                         return (
                             <ul>
                                 <li key={item.id}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <a className="hover:underline" href={item.link}>{item.name}</a>
                                 </li>
                             </ul>
                         )
@@ -56,7 +56,7 @@ function FooterAccordion() {
                         return (
                             <ul>
                                 <li key={item.id}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <a className="hover:underline" href={item.link}>{item.name}</a>
                                 </li>
                             </ul>
                         )
@@ -74,7 +74,7 @@ function FooterAccordion() {
                         return (
                             <ul>
                                 <li key={item.id}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <a className="hover:underline" href={item.link}>{item.name}</a>
                                 </li>
                             </ul>
                         )
@@ -84,7 +84,7 @@ function FooterAccordion() {
 
             <div className="py-2 border-b border-stone-300">
                 <div onClick={handleClick4} className="flex justify-between cursor-pointer hover:text-black">
-                    <h2>Apple Store</h2>
+                    <h2>About Apple</h2>
                     {accordion4 ? <span>x</span> : <span>+</span>}
                 </div>
                 <div className={(accordion4 ? "flex" : "hidden") + " flex-col gap-2 px-8 py-2 text-sm"}>
@@ -92,7 +92,7 @@ function FooterAccordion() {
                         return (
                             <ul>
                                 <li key={item.id}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <a className="hover:underline" href={item.link}>{item.name}</a>
                                 </li>
                             </ul>
                         )

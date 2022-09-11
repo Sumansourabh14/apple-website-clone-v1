@@ -1,4 +1,4 @@
-import { ShopAndLearn, AppleStore, FooterLinks, Services } from "./FooterData";
+import { ShopAndLearn, AppleStore, Services, AboutApple } from "./FooterData";
 
 function FooterMdScreen() {
     return (
@@ -9,7 +9,7 @@ function FooterMdScreen() {
                     {ShopAndLearn.map(item => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.name}</a>
+                                <a className="hover:underline" href={item.link}>{item.name}</a>
                             </li>
                         )
                     })}
@@ -19,17 +19,7 @@ function FooterMdScreen() {
                     {AppleStore.map(item => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.name}</a>
-                            </li>
-                        )
-                    })}
-                </ul>
-                <ul className="flex flex-col gap-2">
-                    <h2 className="font-bold">Footer Links</h2>
-                    {FooterLinks.map(item => {
-                        return (
-                            <li key={item.id}>
-                                <a href={item.link}>{item.name}</a>
+                                <a className="hover:underline" href={item.link}>{item.name}</a>
                             </li>
                         )
                     })}
@@ -39,17 +29,17 @@ function FooterMdScreen() {
                     {Services.map(item => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.name}</a>
+                                <a className="hover:underline" href={item.link}>{item.name}</a>
                             </li>
                         )
                     })}
                 </ul>
                 <ul className="flex flex-col gap-2">
                     <h2 className="font-bold">About Apple</h2>
-                    {Services.map(item => {
+                    {AboutApple.map(item => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.name}</a>
+                                <a className="hover:underline" href={item.link}>{item.name}</a>
                             </li>
                         )
                     })}
