@@ -48,6 +48,9 @@ function Footer() {
                 </div>
 
                 
+                <p className="text-center text-sm py-4">Built by <a href="https://github.com/Sumansourabh14" className="text-stone-900 hover:underline">Suman Sourabh</a></p>
+
+                
             </div>
         </footer>
     )
