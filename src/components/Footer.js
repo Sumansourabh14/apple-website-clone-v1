@@ -5,9 +5,6 @@ import FooterMdScreen from "./FooterMdScreen";
 
 function Footer() {
 
-    // let mql = window.matchMedia(`(min-width: 768px)`);
-    // let mobileView = mql.matches;   // true or false
-
     const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 768;
 

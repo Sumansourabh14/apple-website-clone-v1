@@ -1,5 +1,5 @@
 import { faApple } from "@fortawesome/free-brands-svg-icons";
-import { faBagShopping, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping, faGripLines, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -8,52 +8,52 @@ function Navbar() {
         {
             id: 1,
             name: "Store",
-            link: ""
+            link: "https://www.apple.com/in/shop/goto/store"
         },
         {
             id: 2,
             name: "Mac",
-            link: ""
+            link: "https://www.apple.com/in/mac/"
         },
         {
             id: 3,
             name: "iPad",
-            link: ""
+            link: "https://www.apple.com/in/ipad/"
         },
         {
             id: 4,
             name: "iPhone",
-            link: ""
+            link: "https://www.apple.com/in/iphone/"
         },
         {
             id: 5,
             name: "Watch",
-            link: ""
+            link: "https://www.apple.com/in/watch/"
         },
-        // {
-        //     id: 6,
-        //     name: "Air Pods",
-        //     link: ""
-        // },
-        // {
-        //     id: 7,
-        //     name: "TV & Home",
-        //     link: ""
-        // },
-        // {
-        //     id: 8,
-        //     name: "Only on Apple",
-        //     link: ""
-        // },
+        {
+            id: 6,
+            name: "Air Pods",
+            link: "https://www.apple.com/in/airpods/"
+        },
+        {
+            id: 7,
+            name: "TV & Home",
+            link: "https://www.apple.com/in/tv-home/"
+        },
+        {
+            id: 8,
+            name: "Only on Apple",
+            link: "https://www.apple.com/in/services/"
+        },
         {
             id: 9,
             name: "Accessories",
-            link: ""
+            link: "https://www.apple.com/in/shop/goto/buy_accessories"
         },
         {
             id: 10,
             name: "Support",
-            link: ""
+            link: "https://support.apple.com/en-in"
         },
     ];
 
@@ -64,11 +64,11 @@ function Navbar() {
     }
 
     return (
-        <header className="fixed left-0 right-0 bg-stone-800 backdrop-blur-xl bg-opacity-70 z-50">
-            <nav className="container px-4 py-3 text-white mx-auto flex justify-between items-center">
+        <header className={(navUl ? "bg-black backdrop-blur-none bg-opacity-100 transition-all duration-200" : "bg-stone-800") + " fixed left-0 right-0 backdrop-blur-2xl bg-opacity-90 z-50"}>
+            <nav className="container px-4 py-3 text-white mx-auto flex justify-between items-center 2xl:w-8/12">
                 {!navUl ? (
                     <button onClick={handleClick} className="md:hidden text-xl">
-                        <FontAwesomeIcon icon={faBars} />
+                        <FontAwesomeIcon icon={faGripLines} />
                     </button>
                     ) : (
                     <button onClick={handleClick} className="md:hidden text-xl">
@@ -79,11 +79,11 @@ function Navbar() {
                 <a href="https://www.apple.com/in/">
                     <FontAwesomeIcon icon={faApple} className="text-xl" />
                 </a>
-                <ul className={(navUl ? "flex" : "hidden") + " flex-col md:flex md:flex-row md:gap-4 md:text-sm absolute top-10 left-0 px-10 right-0 md:static bg-black md:bg-transparent"}>
+                <ul className={(navUl ? "flex" : "hidden") + " flex-col md:flex md:flex-row md:gap-4 lg:gap-10 md:text-xs absolute top-12 left-0 px-10 right-0 md:static bg-black md:bg-transparent"}>
                     {navElements.map(navEl => {
                         return (
                             <li key={navEl.id} className="py-3 border-b md:px-0 md:py-0 md:border-none">
-                                <a href={navEl.link}>{navEl.name}</a>
+                                <a href={navEl.link} className="hover:text-stone-400">{navEl.name}</a>
                             </li>
                         )
                     })}

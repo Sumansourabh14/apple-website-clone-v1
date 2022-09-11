@@ -25,6 +25,7 @@ function Carousel() {
                         )
                     })}
                 </div>
+                
             </div>
         </section>
     )
