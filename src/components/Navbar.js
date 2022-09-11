@@ -77,7 +77,7 @@ function Navbar() {
                     )
                 }
                 <a href="https://www.apple.com/in/">
-                    <FontAwesomeIcon icon={faApple} className="text-xl" />
+                    <FontAwesomeIcon icon={faApple} className="text-xl text-stone-300 hover:text-white duration-300" />
                 </a>
                 <ul className={(navUl ? "flex" : "hidden") + " flex-col md:flex md:flex-row md:gap-4 lg:gap-10 md:text-xs absolute top-12 left-0 px-10 right-0 md:static bg-black md:bg-transparent"}>
                     {navElements.map(navEl => {
@@ -89,7 +89,7 @@ function Navbar() {
                     })}
                 </ul>
                 <a href="https://www.apple.com/in/shop/goto/bag">
-                    <FontAwesomeIcon icon={faBagShopping} />
+                    <FontAwesomeIcon icon={faBagShopping} className="text-stone-300 hover:text-white duration-300" />
                 </a>
             </nav>
         </header>

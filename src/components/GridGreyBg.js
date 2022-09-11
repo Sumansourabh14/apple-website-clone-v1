@@ -13,16 +13,17 @@ function GridGreyBg(props) {
                     <br/>
                     {props.description}
                 </h3>
-                <div className="text-sky-600 flex justify-center gap-8">
+                <div className="text-sky-500 flex justify-center gap-8">
                     <a href={props.orderLink} className="text-lg lg:text-xl hover:underline">{props.orderLinkText}
-                        <FontAwesomeIcon icon={faChevronRight} className="text-xs pl-2" />
+                        <FontAwesomeIcon icon={faChevronRight} className="text-xs pl-1" />
                     </a>
                 </div>
-                <div className="pt-8 lg:pt-10">
+                <div className="lg:pt-2">
                     <img 
                         src={props.imageSrc}
                         alt={props.imageAlt}
-                        className="max-w-xs lg:max-w-sm mx-auto" 
+                        // className="max-w-xs lg:max-w-sm mx-auto" 
+                        className="w-auto h-80 mx-auto object-cover" 
                     />
                 </div>
             </a>
