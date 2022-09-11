@@ -1,3 +1,5 @@
+import FooterAccordion from "./FooterAccordion";
+
 function Footer() {
     return (
         <footer id="footer" className="bg-stone-50 mt-4">
@@ -8,6 +10,7 @@ function Footer() {
                         <li>Qualified purchasers can receive promotion savings when they purchase an eligible Mac or eligible iPad with eligible AirPods at a qualifying location. Only one pair of AirPods per eligible Mac or eligible iPad per qualified purchaser. Offer is subject to availability. Subject to terms and conditions herein.</li>
                     </ol>
                 </div>
+                <FooterAccordion />
             </div>
         </footer>
     )
