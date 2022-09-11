@@ -1,4 +1,5 @@
 import FooterAccordion from "./FooterAccordion";
+import { FooterLinks } from "./FooterData";
 
 function Footer() {
     return (
@@ -10,7 +11,30 @@ function Footer() {
                         <li>Qualified purchasers can receive promotion savings when they purchase an eligible Mac or eligible iPad with eligible AirPods at a qualifying location. Only one pair of AirPods per eligible Mac or eligible iPad per qualified purchaser. Offer is subject to availability. Subject to terms and conditions herein.</li>
                     </ol>
                 </div>
+
                 <FooterAccordion />
+
+                <div className="text-sm py-2">
+                    <p>More ways to shop: Find a retailer near you. Or call 000800 040 1966.</p>
+                </div>
+
+                <div className="text-sm py-2 flex flex-col md:flex-row-reverse md:justify-between md:items-center border-t border-stone-300">
+                    <a href="https://www.apple.com/choose-country-region/" className="hover:underline">India</a>
+                    <div className="text-sm py-2 flex flex-col md:flex-row lg:gap-10">
+                        <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+                        <ul className="flex gap-4">
+                            {FooterLinks.map(item => {
+                                return (
+                                    <li key={item.id}>
+                                        <a className="hover:underline" href={item.link}>{item.name}</a>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                </div>
+
+                
             </div>
         </footer>
     )
