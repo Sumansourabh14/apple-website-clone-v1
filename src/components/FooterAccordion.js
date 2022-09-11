@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppleStore, Services, ShopAndLearn } from "./FooterData";
+import { AboutApple, AppleStore, Services, ShopAndLearn } from "./FooterData";
 
 function FooterAccordion() {
     const [accordion1, setAccordion1] = useState(false);
@@ -18,6 +18,12 @@ function FooterAccordion() {
 
     function handleClick3() {
         setAccordion3(!accordion3);
+    }
+
+    const [accordion4, setAccordion4] = useState(false);
+
+    function handleClick4() {
+        setAccordion4(!accordion4);
     }
 
     return (
@@ -65,6 +71,24 @@ function FooterAccordion() {
                 </div>
                 <div className={(accordion3 ? "flex" : "hidden") + " flex-col gap-2 px-8 py-2 text-sm"}>
                     {AppleStore.map(item => {
+                        return (
+                            <ul>
+                                <li key={item.id}>
+                                    <a href={item.link}>{item.name}</a>
+                                </li>
+                            </ul>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div className="py-2 border-b border-stone-300">
+                <div onClick={handleClick4} className="flex justify-between cursor-pointer hover:text-black">
+                    <h2>Apple Store</h2>
+                    {accordion4 ? <span>x</span> : <span>+</span>}
+                </div>
+                <div className={(accordion4 ? "flex" : "hidden") + " flex-col gap-2 px-8 py-2 text-sm"}>
+                    {AboutApple.map(item => {
                         return (
                             <ul>
                                 <li key={item.id}>

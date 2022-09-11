@@ -108,6 +108,34 @@ const FooterLinks = [
         name: "Site Map",
         link: "https://www.apple.com/in/watch/",
     },
+];
+
+const AboutApple = [
+    {
+        id: 1,
+        name: "Newsroom",
+        link: "https://www.apple.com/in/legal/privacy/",
+    },
+    {
+        id: 2,
+        name: "Apple Leadership",
+        link: "https://www.apple.com/in/apple-tv-plus/",
+    },
+    {
+        id: 3,
+        name: "Career Oppurtunities",
+        link: "https://www.apple.com/in/apple-arcade/",
+    },
+    {
+        id: 4,
+        name: "Investors",
+        link: "https://www.apple.com/in/watch/",
+    },
+    {
+        id: 5,
+        name: "Ethics & Compliance",
+        link: "https://www.apple.com/in/watch/",
+    },
 ]
 
-export { ShopAndLearn, Services, AppleStore, FooterLinks };
+export { ShopAndLearn, Services, AppleStore, FooterLinks, AboutApple };
