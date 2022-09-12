@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<img src="./src/carousel-images/Apple-clone-hero-section.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Apple Website Clone](https://apple-clone-suman-sourabh.netlify.app/)
 
-## Available Scripts
+A clone of Apple's homepage of their [official website](https://www.apple.com/in/) (location: India) by implementing the big block design.
 
-In the project directory, you can run:
+Visit the clone [here](https://apple-clone-suman-sourabh.netlify.app/) (hosted on Netlify)
 
-### `npm start`
+## Tech used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ReactJS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [daisyUI](https://daisyui.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+This web site implements grid layout with Tailwind CSS and consists of components such as:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Responsive navbar
 
-### `npm run build`
+- The navbar is fully responsive and its background color gets changed when the hamburger menu (on the left in mobile screens) is pressed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Uses the concept of [conditional redering](https://reactjs.org/docs/conditional-rendering.html) in React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Carousel (made with daisyUI)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The carousel showcasing the different shows on Apple TV+ was implemented with daisyUI, a component library for Tailwind CSS.
 
-### `npm run eject`
+See [daisyUI carousel documentation](https://daisyui.com/components/carousel/) for more.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Dynamic footer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The footer displays 
+  - An accordion component when the viewport width is less than 768px.
+  - A flex layout component when the viewport width is more than 768px. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Helpful Links
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Apple official website](https://www.apple.com/)
+- [daisyUI installation](https://daisyui.com/docs/install/)
+- [Fontawesome icons with React](https://fontawesome.com/docs/web/use-with/react/)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Built by [Suman Sourabh](https://sumansourabh.netlify.app/) | 2022**
